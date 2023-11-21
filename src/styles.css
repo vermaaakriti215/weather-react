@@ -2,11 +2,11 @@ body {
   font-family: "Ysabeau SC", sans-serif;
 }
 .content {
-  max-width: 700px;
-  margin: 200px auto;
+  max-width: 500px;
+  margin: 100px auto;
   padding: 30px;
   border-radius: 20px;
-  border: 2px solid #6e6e6e;
+  border: 2px solid white;
 }
 a {
   color: rgb(102, 101, 101);
@@ -16,7 +16,7 @@ h1 {
   font-weight: bold;
 }
 #temp-input {
-  font-size: 30px;
+  font-size: 1px;
   color: #343434;
 }
 .cloudy {

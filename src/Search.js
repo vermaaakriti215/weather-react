@@ -12,28 +12,28 @@ export default function Search() {
     cityDisplay.textContent = cityName;
   }
   return (
-    <div class="container">
-      <form class="searching" id="form-input" onSubmit={handleSubmit}>
-        <div class="row">
-          <div class="col-6">
+    <div className="container">
+      <form className="searching" id="form-input" onSubmit={handleSubmit}>
+        <div className="row">
+          <div className="col-6">
             <input
               type="search"
               placeholder="Type a city..."
               autocomplete="off"
               autofocus="off"
-              class="form-control shadow-sm"
+              className="form-control shadow-sm"
               id="city-input"
             />
           </div>
-          <div class="col-3">
+          <div className="col-3">
             <input
               type="submit"
               value="Search"
-              class="form-control btn btn-dark"
+              className="form-control btn btn-dark"
             />
           </div>
-          <div class="col-3">
-            <button type="button" id="current-loc">
+          <div className="col-3">
+            <button type="button" className="form-control btn btn-dark">
               Current
             </button>
           </div>

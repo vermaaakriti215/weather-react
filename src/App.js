@@ -11,16 +11,16 @@ function App() {
         <CurrentWeather city="Jhansi" />
         <Futureforecast />
       </div>
-      <div class="me">
+      <div className="me">
         <a
           href="https://github.com/vermaaakriti215/weather-project"
           target="_blank"
           rel="noreferrer"
-          class="github-link"
+          className="github-link"
         >
           Open source code
         </a>
-        by Aakriti Verma
+        , by Aakriti Verma
       </div>
     </div>
   );
