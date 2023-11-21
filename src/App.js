@@ -1,11 +1,27 @@
 import "./App.css";
-import Weather from "./Weather";
+import "./styles.css";
+import CurrentWeather from "./CurrentWeather";
+import Search from "./Search";
+import Futureforecast from "./Futureforecast";
 function App() {
   return (
     <div className="App">
-      <h1>
-        <Weather />
-      </h1>
+      <div className="content">
+        <Search />
+        <CurrentWeather city="Jhansi" />
+        <Futureforecast />
+      </div>
+      <div class="me">
+        <a
+          href="https://github.com/vermaaakriti215/weather-project"
+          target="_blank"
+          rel="noreferrer"
+          class="github-link"
+        >
+          Open source code
+        </a>
+        by Aakriti Verma
+      </div>
     </div>
   );
 }
