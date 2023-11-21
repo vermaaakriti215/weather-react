@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./styles.css";
 import axios from "axios";
 
 export default function CurrentWeather() {
@@ -37,7 +38,7 @@ export default function CurrentWeather() {
                 alt="Clear"
                 id="cloud-icon"
               />
-              <span id="temp-input">{temp}</span>
+              <span id="current-temp">{temp}</span>
               <span className="small">&deg;C </span>
             </div>
           </div>

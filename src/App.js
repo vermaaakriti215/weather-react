@@ -9,6 +9,8 @@ function App() {
       <div className="content">
         <Search />
         <CurrentWeather city="Jhansi" />
+        <hr />
+        <br />
         <Futureforecast />
       </div>
       <div className="me">

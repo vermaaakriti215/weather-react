@@ -5,7 +5,7 @@ import "./App.css";
 export default function Futureforecast() {
   return (
     <div className="Futureforecast">
-      <div className="weather-forecast" id="forecast">
+      <div className="weather-forecast">
         <div className="row">
           <div className="col-2">
             <p>Wed</p>
