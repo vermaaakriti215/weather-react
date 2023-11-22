@@ -80,7 +80,7 @@ button:hover {
   position: fixed;
   top: 20px;
   right: 20px;
-  z-index: 1; /* Ensure it's on top of other elements */
+  z-index: 1;
 }
 
 .switch {
@@ -121,7 +121,7 @@ button:hover {
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: #6cb8f6;
 }
 
 input:checked + .slider:before {
