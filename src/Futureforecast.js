@@ -8,64 +8,76 @@ export default function Futureforecast() {
       <div className="weather-forecast">
         <div className="row">
           <div className="col-2">
-            <p>Wed</p>
-            <img
-              src="http://openweathermap.org/img/wn/10d@2x.png"
-              alt=""
-              width="42"
-            ></img>
-            <span id="temp-input">45</span>
-            <span className="small">&deg;C </span>
+            <p>
+              Wed
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+                width="42"
+              ></img>
+              45
+              <span className="small">&deg;C </span>
+            </p>
           </div>
           <div className="col-2">
-            <p>Thur</p>
-            <img
-              src="http://openweathermap.org/img/wn/10d@2x.png"
-              alt=""
-              width="42"
-            ></img>
-            <span id="temp-input">45</span>
-            <span className="small">&deg;C </span>
+            <p>
+              Thur
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+                width="42"
+              ></img>
+              45
+              <span className="small">&deg;C </span>
+            </p>
           </div>
           <div className="col-2">
-            <p>Fri</p>
-            <img
-              src="http://openweathermap.org/img/wn/10d@2x.png"
-              alt=""
-              width="42"
-            ></img>
-            <span id="temp-input">45</span>
-            <span className="small">&deg;C </span>
+            <p>
+              Fri
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+                width="42"
+              ></img>
+              45
+              <span className="small">&deg;C </span>
+            </p>
           </div>
           <div className="col-2">
-            <p>Sat</p>
-            <img
-              src="http://openweathermap.org/img/wn/10d@2x.png"
-              alt=""
-              width="42"
-            ></img>
-            <span id="temp-input">45</span>
-            <span className="small">&deg;C </span>
+            <p>
+              Sat
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+                width="42"
+              ></img>
+              45
+              <span className="small">&deg;C </span>
+            </p>
           </div>
           <div className="col-2">
-            <p>Sun</p>
-            <img
-              src="http://openweathermap.org/img/wn/10d@2x.png"
-              alt=""
-              width="42"
-            ></img>
-            <span id="temp-input">45</span>
-            <span className="small">&deg;C </span>
+            <p>
+              Sun
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+                width="42"
+              ></img>
+              45
+              <span className="small">&deg;C </span>
+            </p>
           </div>
           <div className="col-2">
-            <p>Mon</p>
-            <img
-              src="http://openweathermap.org/img/wn/10d@2x.png"
-              alt=""
-              width="42"
-            ></img>
-            <span id="temp-input">45</span>
-            <span className="small">&deg;C </span>
+            <p>
+              Mon
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+                width="42"
+              ></img>
+              45
+              <span className="small">&deg;C </span>
+            </p>
           </div>
         </div>
       </div>
