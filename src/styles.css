@@ -3,7 +3,7 @@ body {
 }
 .content {
   max-width: 504px;
-  margin: 90px auto;
+  margin: 0 auto;
   padding: 30px;
   border-radius: 20px;
   border: 2px solid rgb(139, 138, 138);
@@ -66,6 +66,8 @@ button:hover {
   background-position: center;
   background-repeat: no-repeat;
   color: white;
+  height: 100vh;
+  padding: 90px 0;
 }
 
 .light-mode {
@@ -74,6 +76,8 @@ button:hover {
   background-position: center;
   background-repeat: no-repeat;
   color: black;
+  height: 100vh;
+  padding: 90px 0;
 }
 
 .switch-container {
