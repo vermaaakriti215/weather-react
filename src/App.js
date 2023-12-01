@@ -18,7 +18,9 @@ function App() {
         <br />
         <Futureforecast />
       </div>
+
       <div className="switch-container">
+        <i className="fa-solid fa-circle-half-stroke" id="display-mode"></i>
         <label className="switch">
           <input type="checkbox" onChange={toggleDarkMode} />
           <span className="slider round"></span>

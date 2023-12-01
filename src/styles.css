@@ -12,6 +12,10 @@ a {
 h1 {
   font-weight: bold;
 }
+#display-mode {
+  width: 20px;
+  font-size: 18px;
+}
 #current-temp {
   font-size: 36px;
 }
