@@ -1,44 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./styles.css";
+import WeatherInfo from "./WeatherInfo";
+import axios from "axios";
 
-export default function Search() {
+export default function Search(props) {
+  let [city, setCity] = useState(props.city || "");
+  const [weatherData, setData] = useState({ ready: false });
+
+  function handleCityChange(response) {
+    setData({
+      ready: true,
+      coordinates: response.data.coord,
+      temp: Math.round(response.data.main.temp),
+      humidity: response.data.main.humidity,
+      description: response.data.weather[0].description,
+      icon: response.data.weather[0].icon,
+      wind: response.data.wind.speed,
+      city: response.data.name,
+      iconnumber: response.data.weather[0].icon,
+      precipitation: response.data.rain ? response.data.rain["1h"] : 0,
+    });
+  }
   function handleSubmit(event) {
     event.preventDefault();
-    let cityName = event.target.city.value;
-    displayCity(cityName);
+    search();
   }
-  function displayCity(cityName) {
-    const cityDisplay = document.querySelector("#city-display");
-    cityDisplay.textContent = cityName;
+  function handleCity(event) {
+    setCity(event.target.value);
   }
-  return (
-    <div className="container">
-      <form className="searching" id="form-input" onSubmit={handleSubmit}>
-        <div className="row">
-          <div className="col-6">
-            <input
-              type="search"
-              placeholder="Type a city..."
-              autocomplete="off"
-              autofocus="off"
-              className="form-control shadow-sm"
-              id="city-input"
-            />
+  function search() {
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=62231151ce343c4d68652e1617efc22f&units=metric`;
+    axios.get(url).then(handleCityChange);
+  }
+  if (weatherData.ready) {
+    return (
+      <div className="container">
+        <form className="searching" id="form-input" onSubmit={handleSubmit}>
+          <div className="row">
+            <div className="col-8">
+              <input
+                type="search"
+                placeholder="Type a city..."
+                autocomplete="off"
+                autofocus
+                className="form-control shadow-sm"
+                id="city-input"
+                onChange={handleCity}
+              />
+            </div>
+            <div className="col-4">
+              <input
+                type="submit"
+                value="Search"
+                className="form-control btn btn-dark"
+              />
+            </div>
           </div>
-          <div className="col-3">
-            <input
-              type="submit"
-              value="Search"
-              className="form-control btn btn-dark"
-            />
-          </div>
-          <div className="col-3">
-            <button type="button" className="form-control btn btn-dark">
-              Current
-            </button>
-          </div>
-        </div>
-      </form>
-    </div>
-  );
+        </form>
+        <WeatherInfo data={weatherData} />
+      </div>
+    );
+  } else {
+    search();
+    return "Loading...";
+  }
 }

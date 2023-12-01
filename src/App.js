@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./styles.css";
-import CurrentWeather from "./CurrentWeather";
 import Search from "./Search";
 import Futureforecast from "./Futureforecast";
 
@@ -14,8 +13,7 @@ function App() {
   return (
     <div className={`App ${darkMode ? "dark-mode" : "light-mode"}`}>
       <div className="content">
-        <Search />
-        <CurrentWeather city="Jhansi" />
+        <Search city="Jhansi" />
         <hr />
         <br />
         <Futureforecast />
