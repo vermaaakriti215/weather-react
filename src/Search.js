@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
+import Futureforecast from "./Futureforecast";
 
 export default function Search(props) {
   let [city, setCity] = useState(props.city || "");
@@ -30,7 +31,8 @@ export default function Search(props) {
     setCity(event.target.value);
   }
   function search() {
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=62231151ce343c4d68652e1617efc22f&units=metric`;
+    let apiKey = `ff1d9ea9376b5c27a82e04fc2b2abdbb`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(url).then(handleCityChange);
   }
   if (weatherData.ready) {
@@ -59,6 +61,8 @@ export default function Search(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
+        <br />
+        <Futureforecast data={weatherData} />
       </div>
     );
   } else {

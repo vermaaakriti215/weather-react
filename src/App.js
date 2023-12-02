@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./styles.css";
 import Search from "./Search";
-import Futureforecast from "./Futureforecast";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -15,8 +14,6 @@ function App() {
       <div className="content">
         <Search city="Jhansi" />
         <hr />
-        <br />
-        <Futureforecast />
       </div>
 
       <div className="switch-container">
