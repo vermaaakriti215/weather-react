@@ -13,7 +13,6 @@ function App() {
     <div className={`App ${darkMode ? "dark-mode" : "light-mode"}`}>
       <div className="content">
         <Search city="Jhansi" />
-        <hr />
       </div>
 
       <div className="switch-container">

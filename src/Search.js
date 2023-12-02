@@ -61,7 +61,7 @@ export default function Search(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-        <br />
+        <hr />
         <Futureforecast data={weatherData} />
       </div>
     );

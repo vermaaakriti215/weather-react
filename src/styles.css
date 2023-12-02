@@ -1,5 +1,5 @@
 .content {
-  max-width: 504px;
+  max-width: 540px;
   margin: 0 auto;
   padding: 30px;
   border-radius: 20px;
@@ -24,10 +24,16 @@ h1 {
   color: #343434;
 }
 #cloud-icon {
-  width: 110px;
+  width: 120px;
+}
+#temp-C {
+  font-size: 25px;
 }
 .small {
   position: absolute;
+}
+.forecastC {
+  font-size: 11px;
 }
 .corner {
   font-size: 20px;

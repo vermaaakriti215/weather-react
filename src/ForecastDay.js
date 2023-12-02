@@ -16,11 +16,12 @@ export default function ForecastDay(props) {
         <img
           src={`http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`}
           alt=""
-          width="42"
+          width="48"
         ></img>
-        {Math.round(props.data.temp.max)}
-        <span className="small">&deg;C </span>|{Math.round(props.data.temp.min)}
-        <span className="small">&deg;C </span>
+        <span className="forecastC">
+          {Math.round(props.data.temp.max)} &deg;C |
+          {Math.round(props.data.temp.min)} &deg;C
+        </span>
       </p>
     </div>
   );

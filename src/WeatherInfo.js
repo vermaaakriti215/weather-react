@@ -15,7 +15,9 @@ export default function WeatherInfo(props) {
                 id="cloud-icon"
               />
               <span id="current-temp">{props.data.temp}</span>
-              <span className="small">&deg;C </span>
+              <span className="small" id="temp-C">
+                &deg;C{" "}
+              </span>
             </div>
           </div>
           <div className="col-6">
