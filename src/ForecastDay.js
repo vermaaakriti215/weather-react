@@ -16,7 +16,7 @@ export default function ForecastDay(props) {
         <img
           src={`http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`}
           alt=""
-          width="48"
+          width="62"
         ></img>
         <span className="forecastC">
           {Math.round(props.data.temp.max)} &deg;C |
