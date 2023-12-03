@@ -21,6 +21,7 @@ function App() {
           <input type="checkbox" onChange={toggleDarkMode} />
           <span className="slider round"></span>
         </label>
+        <br />
       </div>
       <div className="me">
         <a

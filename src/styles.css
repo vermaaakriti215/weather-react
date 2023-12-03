@@ -1,6 +1,6 @@
 .content {
   max-width: 540px;
-  margin: 0 auto;
+  margin: 50px auto;
   padding: 30px;
   border-radius: 20px;
   border: 2px solid rgb(139, 138, 138);
@@ -33,7 +33,7 @@ h1 {
   position: absolute;
 }
 .forecastC {
-  font-size: 11px;
+  font-size: 10px;
 }
 .corner {
   font-size: 20px;
