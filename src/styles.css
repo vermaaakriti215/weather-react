@@ -73,7 +73,7 @@ button:hover {
 }
 .dark-mode {
   background-image: url("./darkmode.jpg");
-  background-size: 2000px;
+  background-size: 3000px;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
@@ -83,7 +83,7 @@ button:hover {
 
 .light-mode {
   background-image: url("./lightmode.jpg");
-  background-size: 2000px;
+  background-size: 3000px;
   background-position: center;
   background-repeat: no-repeat;
   color: black;
